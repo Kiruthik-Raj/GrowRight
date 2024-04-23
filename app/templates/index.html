@@ -2,22 +2,29 @@
 
 {% block body %}
 <!-- banner -->
-<section class="banner_w3lspvt" id="home">
+<section class="banner_w3lspvt" id="home" style="background-image: url('static/images/3.jpeg'); background-repeat: no-repeat;">
 	<div class="csslider infinity" id="slider1">
-	
 				<div class="banner-top">
 					<div class="overlay">
 						<div class="container">
-							<div class="w3layouts-banner-info text-center">
-								<h3 class="text-wh">GrowRight</h3>
-								<h4 class="text-wh mx-auto my-4"><b>Get informed decisions about your farming strategy.</b></h4>
+							<div class="w3layouts-banner-info text-center" style="padding: 40px 20px; margin-top: 45px; margin-bottom: 25px;">
+								<h3 class="text-wh">AgriTech</h3>
+								<h4 class="text-wh mx-auto my-4"><b>Grow Your Perfect Harvest with AgriTech!</b></h4>
 								<br>
-								<h4 class="text-wh mx-auto my-4"><strong> Here are some questions we'll answer</strong></h4>
+								<p class="text-wh mx-auto mt-2">
+									Unsure what crops will flourish in your backyard? AgriTech takes the guesswork out of gardening. Simply tell us about your plot, and we'll recommend crops that are perfectly suited to your local climate and soil conditions.
+								</p>
 								<p class="text-li mx-auto mt-2">
-									1. What crop to plant here? <br>
-									2. What fertilizer to use? <br>
-									3. Which disease do your crop have?<br>
-									4. How to cure the disease?</p>
+									<br>
+									Empowering farmers with AI: Spotting diseases before they spread
+									<br>
+									Detecting crop diseases early saves harvests and livelihoods.
+									<br>
+
+									</p>
+									<br>
+									<br>
+
 							</div>
 						</div>
 					</div>
@@ -32,7 +39,7 @@
 		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
 		<div class="row core-grids">
 			<div class="col-lg-6 core-left">
-				<img src="{{ url_for('static', filename='images/core.jpg') }}" class="img-fluid" alt="" />
+				<img src="{{ url_for('static', filename='images/farmer-bg.jpeg') }}" class="img-fluid" alt="" />
 			</div>
 			<div class="col-lg-6 core-right">
 				<h3 class="mt-4">Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase
@@ -53,10 +60,10 @@
 	<div class="container py-md-5">
 		<h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>
 		<div class="row blog-grids">
-			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
-				<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" />
+			<div class="col-lg-6 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" style="width: 540px; height: 370px;" />
 				<a href="{{ url_for('crop_recommend') }}">
-					<div class="blog-info">
+					<div class="blog-info" style="height: 170px;">
 
 						<h4>Crop</h4>
 
@@ -65,7 +72,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+			<!-- <div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
 				<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="img-fluid" alt="" />
 				<a href="{{ url_for('fertilizer_recommendation') }}">
 					<div class="blog-info">
@@ -74,15 +81,15 @@
 							and the recommended crop</p>
 					</div>
 				</a>
-			</div>
-			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+			</div> -->
+			<div class="col-lg-6 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
 
-				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="">
+				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="" style="height: 370px;">
 
-				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<img src="images/s4.jpg" class="img-fliud" alt="" />
 				<a href="{{ url_for('disease_prediction') }}">
-					<div class="blog-info">
-						<h4>Crop Disease</h4>
+					<div class="blog-info" style="height: 170px;">
+						<h4>Crop Disease Detection</h4>
 						<p class="mt-2">Predicting the name and causes of crop disease and suggestions to cure it</p>
 					</div>
 				</a>
